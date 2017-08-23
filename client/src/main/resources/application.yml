@@ -1,0 +1,24 @@
+server:
+  port: 9999
+
+
+oauth2:
+  server:
+    url: http://localhost:8080
+  resource:
+    url: http://localhost:8888
+
+security:
+  oauth2:
+    client:
+      client-id: my-client
+      client-secret: my-client-pass
+      access-token-uri: ${oauth2.server.url}/uaa/oauth/token
+      user-authorization-uri: ${oauth2.server.url}/uaa/oauth/authorize
+    resource:
+      token-info-uri: ${oauth2.server.url}/uaa/oauth/check_token
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG
