@@ -1,4 +1,4 @@
-package it.me.tae.sso;
+package it.me.tae.client;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

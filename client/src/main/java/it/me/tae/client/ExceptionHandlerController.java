@@ -1,4 +1,4 @@
-package it.me.tae.sso;
+package it.me.tae.client;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

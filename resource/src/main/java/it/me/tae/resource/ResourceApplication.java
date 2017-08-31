@@ -1,4 +1,4 @@
-package it.me.tae.sso;
+package it.me.tae.resource;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
