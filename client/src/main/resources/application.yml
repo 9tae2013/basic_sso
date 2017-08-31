@@ -16,7 +16,8 @@ security:
       access-token-uri: ${oauth2.server.url}/uaa/oauth/token
       user-authorization-uri: ${oauth2.server.url}/uaa/oauth/authorize
     resource:
-      token-info-uri: ${oauth2.server.url}/uaa/oauth/check_token
+      jwt:
+        key-value: jwt-secret
 
 
 logging:

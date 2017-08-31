@@ -3,16 +3,6 @@ server:
   context-path: /uaa
 
 
-security:
-  oauth2:
-    client:
-      client-id: my-client
-      client-secret: my-client-pass
-      scope: openid
-      authorized-grant-types: password,authorization_code,refresh_token,implicit,client_credentials
-    authorization:
-      check-token-access: isAuthenticated()
-
 
 logging:
   level:

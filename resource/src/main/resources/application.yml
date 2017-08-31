@@ -11,7 +11,8 @@ security:
       client-id: my-client
       client-secret: my-client-pass
     resource:
-      token-info-uri: ${oauth2.server.url}/uaa/oauth/check_token
+      jwt:
+        key-value: jwt-secret
 
 logging:
   level:
