@@ -29,6 +29,13 @@ security:
           -----END PUBLIC KEY-----
 
 
+zuul:
+  routes:
+    resource:
+      path: /admin/**
+      url: ${oauth2.resource.url}/me
+
+
 logging:
   level:
     org.springframework.security: DEBUG
