@@ -2,7 +2,45 @@ server:
   port: 8080
   context-path: /uaa
 
-
+jwt:
+  verifier-key: |
+    -----BEGIN PUBLIC KEY-----
+    MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvJ5NOBuV4HDZT8+DCr5d
+    3z1NSukDG5k8XZ8DQniqlttPTQPfkaecEDnEAdG3g2795xd4I0hzMPebUU0hqGVY
+    C+jje4b5QKJBSmvvECdcABo4uthXlouiluBfny3Ka8AaVIh4UWnY7hKUKRpItIGc
+    8OS8EzkUh9GS2OipikKx6ZFLlZj1AmRkzKpC8y+yFZ1giFklBz89nugt2brvcpx0
+    AWMn8Xl+riR7OE5jugQ0UCcswYfp0EmlGBdvaJ05u+cES51se8mhsWZkTZh5mjQO
+    XzA8swSrxUO/aSi3Dt0+i5Er2aq2PFMXcxLCPvxG7eL5cvjZBF/LXjr65uMC8Uy6
+    NwIDAQAB
+    -----END PUBLIC KEY-----
+  signing-key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEpAIBAAKCAQEAvJ5NOBuV4HDZT8+DCr5d3z1NSukDG5k8XZ8DQniqlttPTQPf
+    kaecEDnEAdG3g2795xd4I0hzMPebUU0hqGVYC+jje4b5QKJBSmvvECdcABo4uthX
+    louiluBfny3Ka8AaVIh4UWnY7hKUKRpItIGc8OS8EzkUh9GS2OipikKx6ZFLlZj1
+    AmRkzKpC8y+yFZ1giFklBz89nugt2brvcpx0AWMn8Xl+riR7OE5jugQ0UCcswYfp
+    0EmlGBdvaJ05u+cES51se8mhsWZkTZh5mjQOXzA8swSrxUO/aSi3Dt0+i5Er2aq2
+    PFMXcxLCPvxG7eL5cvjZBF/LXjr65uMC8Uy6NwIDAQABAoIBAGFAgfIfDw0VQocL
+    KLbeZspW8kZglFCjluNyvJyGWPbFh0Lfb2PLdwVKs4x4lFV5YgLIMBKJJZOm53do
+    /KS19ErXvosPke7Iej+kHTRIBwCqhHuaVrbxslh2wfbyBj++YhUZ9GeN2uMNw0Ta
+    H4iql8ABQBPtR2+sGDos5FW8g704YSYswwCNwPoqkTd+VZxMZcjoNn1kJZA9Zk03
+    AfJ+LeOZGQnT4x0/uHknBH7hOc1n6RIvq8ByJwGoV+XybMeS5kUzgFjkf3bA9qAB
+    1psB08UHrrT5Li6svI1cU2OSXNluZpn4mQqIf3BQj5X8iGth7Mf5MFkXbhepoVk4
+    ew9CrvkCgYEA6cd3gmYqRz2dMCv5Zdli2x4zu934EJSAjpTQuYYABMXcMq4xDx9d
+    QouDwdMZMEthDN9adgBiQ+e9m5Z92eXnxJjmXOZgH/KgxGpnmW7ehZ9havhBIxM0
+    hFqHIVYIdLkKrNGCW7MnuqBFPJKWXqDzJueAli6gTwOq2JZLCZAdNJsCgYEAzovw
+    omHLmcChufMHA+rwMUvTuyqqzOnlghT04kv6AKe6OjwxQPMCe5omoVeZBAOMfY1d
+    y5JIEYdjgVySOIJOwJpIxe1NYc9/Gr1kDeoKgNstLhspVM0ZSjVYavyVyIdHYWY+
+    A2dJF0jxU7aYLbZanqw+Yr4sV/kjU+SnALUjFJUCgYA3esfo4VgNOhkQso7oVdO5
+    DozWe9IAFU4BCF4UeTGN8GrWeDJaVWYrgbKOEAv9QxZQGL1+HY80cE22G9vYF1CO
+    fn7E80NCsbDnjBzz87TJX06eNTY4Hbmr41QIXEN7d+KJqtrV6kl2Z8ymmF8pK+co
+    h24jtgMDXWpxJhG+vj3AGwKBgQCgRYqWFljMl+NmzSQ2cAmt1u8XH0al9yE2TViw
+    eNAnzf79zVNS2L6mdrlfHQAJU0+i5R1RJ9NwdqRJ7zEvVD4TyiSKIVeYfFBeyXNo
+    MKGx12E5k64AtZ3YLYjMi+8WSZKkC5g3P+BBh0Jr+RYg8o1i7rkCGhuCsDovkQ/d
+    xrDP+QKBgQDT/MNxJVteofpcsOp5t47K07HDh8dVAWX55ejym7Q/WZbUjD3vms2W
+    RivAbpMeftkY2gj/7UUoqDTPkIxT/UMHiK21Tg5uyu5zVilfcJVq2fLuBD/oG0bR
+    Dv7mYBIeM734ivdhcVduNWCb/kS4gWbY23rq1WzExof9+yzdNoXJlg==
+    -----END RSA PRIVATE KEY-----
 
 logging:
   level:

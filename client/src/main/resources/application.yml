@@ -17,7 +17,16 @@ security:
       user-authorization-uri: ${oauth2.server.url}/uaa/oauth/authorize
     resource:
       jwt:
-        key-value: jwt-secret
+        key-value: |
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvJ5NOBuV4HDZT8+DCr5d
+          3z1NSukDG5k8XZ8DQniqlttPTQPfkaecEDnEAdG3g2795xd4I0hzMPebUU0hqGVY
+          C+jje4b5QKJBSmvvECdcABo4uthXlouiluBfny3Ka8AaVIh4UWnY7hKUKRpItIGc
+          8OS8EzkUh9GS2OipikKx6ZFLlZj1AmRkzKpC8y+yFZ1giFklBz89nugt2brvcpx0
+          AWMn8Xl+riR7OE5jugQ0UCcswYfp0EmlGBdvaJ05u+cES51se8mhsWZkTZh5mjQO
+          XzA8swSrxUO/aSi3Dt0+i5Er2aq2PFMXcxLCPvxG7eL5cvjZBF/LXjr65uMC8Uy6
+          NwIDAQAB
+          -----END PUBLIC KEY-----
 
 
 logging:

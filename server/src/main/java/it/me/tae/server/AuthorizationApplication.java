@@ -3,6 +3,7 @@ package it.me.tae.server;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -43,7 +44,7 @@ public class AuthorizationApplication {
                     .secret("my-client-pass")
                     .scopes("openid")
                     .autoApprove(true)
-                    .authorizedGrantTypes("implicit","refresh_token", "password", "authorization_code", "client_credentials");
+                    .authorizedGrantTypes("implicit", "refresh_token", "password", "authorization_code", "client_credentials");
         }
 
 
@@ -58,10 +59,9 @@ public class AuthorizationApplication {
         }
 
         @Bean
+        @ConfigurationProperties("jwt")
         protected JwtAccessTokenConverter jwtTokenEnhancer() {
-            JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
-            converter.setSigningKey("jwt-secret");
-            return converter;
+            return new JwtAccessTokenConverter();
         }
     }
 
